@@ -10,7 +10,7 @@ class ObserveAgent < Formula
 
     on_macos do
       if Hardware::CPU.arm?
-        url "https://github.com/observeinc/observe-agent/releases/download/v0.1.10/observe-agent_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        url "https://github.com/observeinc/observe-agent/releases/download/v0.1.10/observe-agent_Darwin_arm64.tar.gz"
         sha256 "65241c0e3b08d92781d89b6243c1f481ffde7489a64955043776086289924ab7"
 
         def install
@@ -18,7 +18,7 @@ class ObserveAgent < Formula
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/observeinc/observe-agent/releases/download/v0.1.10/observe-agent_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        url "https://github.com/observeinc/observe-agent/releases/download/v0.1.10/observe-agent_Darwin_x86_64.tar.gz"
         sha256 "df43cd340d8e90d3dc314e2e5d297558637ead1baf48d05d796d3fcfb6389b20"
 
         def install
@@ -29,7 +29,7 @@ class ObserveAgent < Formula
 
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-        url "https://github.com/observeinc/observe-agent/releases/download/v0.1.10/observe-agent_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        url "https://github.com/observeinc/observe-agent/releases/download/v0.1.10/observe-agent_Linux_arm64.tar.gz"
         sha256 "b7338980d5abd4f21aff21d3336d16f822edb510ac47fda0ef1372f86896d0d3"
 
         def install
@@ -37,7 +37,7 @@ class ObserveAgent < Formula
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/observeinc/observe-agent/releases/download/v0.1.10/observe-agent_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        url "https://github.com/observeinc/observe-agent/releases/download/v0.1.10/observe-agent_Linux_x86_64.tar.gz"
         sha256 "5b9df37e7f84c05d8538568a8b18a71042b5fbb71c4c037825613dcf6e805e27"
 
         def install
